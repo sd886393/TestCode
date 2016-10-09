@@ -1,0 +1,5 @@
+#if (${user})
+    #foreach ($u in $user)
+        $u.user_name<br>
+    #end
+#end

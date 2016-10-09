@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by Jimmy on 2016/9/21.
@@ -25,6 +26,22 @@ public class UserController {
         User user = userService.getUser(id);
         modelMap.put("user", user);
         return "showUser";
+    }
+
+    @RequestMapping(value = "/allUser", method = RequestMethod.GET)
+    public String allUser( ModelMap modelMap){
+        List<User> user = userService.getAllUser();
+        modelMap.put("user", user);
+        return "allUser";
+    }
+
+    @RequestMapping(value = "/addUser", method = RequestMethod.GET)
+    public String addUser(@RequestParam("name")String name, @RequestParam("age")String age, ModelMap modelMap){
+        User user = new User();
+        user.setUser_name(name);
+        user.setUser_age(age);
+        userService.addUser(user);
+        return "redirect:allUser";
     }
     /* 不使用模板
     public void showUser(HttpServletResponse response) throws IOException{

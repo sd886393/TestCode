@@ -14,4 +14,10 @@ public class UserServiceImpl implements UserService {
     public User getUser(String userId) {
         return this.userMapper.getUser(userId);
     }
+    public java.util.List<User> getAllUser(){
+        return this.userMapper.getAllUsers();
+    }
+    public void addUser(User user){
+        this.userMapper.addUser(user.getUser_id(), user.getUser_name(), user.getUser_age());
+    }
 }
