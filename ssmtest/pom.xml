@@ -16,6 +16,7 @@
         <mybatis-spring.version>1.2.5</mybatis-spring.version>
         <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
         <mysql.connector.version>5.1.38</mysql.connector.version>
+        <jackson.version>1.9.10</jackson.version>
     </properties>
 
     <dependencies>
@@ -75,7 +76,7 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
-            <version>1.2</version>
+            <version>1.4</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
         <dependency>
@@ -89,6 +90,7 @@
             <artifactId>mybatis</artifactId>
             <version>3.2.8</version>
         </dependency>
+
         <!-- jsp support -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -133,17 +135,28 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql.connector.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.0</version>
+        </dependency>
         <!-- test support -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.4</version>
+            <version>4.9</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
 
     </dependencies>

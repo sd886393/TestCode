@@ -8,6 +8,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -43,6 +44,13 @@ public class UserController {
         userService.addUser(user);
         return "redirect:allUser";
     }
+
+    @RequestMapping(value="/getUserWithJson", method = RequestMethod.GET)
+    public @ResponseBody User getUserWithJson(@RequestParam("id")String id){
+        return userService.getUser(id);
+    }
+
+
     /* 不使用模板
     public void showUser(HttpServletResponse response) throws IOException{
         response.getWriter().print("<h1>Hello</h1>");
