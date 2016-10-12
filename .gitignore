@@ -2,3 +2,4 @@ ssmtest/.idea/
 ssmtest/target/
 hexo/.deploy_git
 hexo/node_modules
+*.iml
