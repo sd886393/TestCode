@@ -26,10 +26,7 @@ public class No15_3Sum {
             while(left < right){
                 int now = nums[i] + nums[left] + nums[right];
                 if(now == 0) {
-                    ArrayList<Integer> row = new ArrayList<Integer>();
-                    row.add(nums[i]);
-                    row.add(nums[left]);
-                    row.add(nums[right]);
+                    ArrayList<Integer> row = new ArrayList<Integer>(Arrays.asList(nums[i],nums[left],nums[right]));
                     result.add(row);
                     while(left < right){
                         if (nums[left] == nums[left+1]) {
