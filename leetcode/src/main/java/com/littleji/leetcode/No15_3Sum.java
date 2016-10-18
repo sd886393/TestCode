@@ -21,34 +21,67 @@ public class No15_3Sum {
         *1. i>x && j<y
         *2. i<x && j>y
         */
-        for (int i =0; i<nums.length; i++){
+        for (int i =0; i < nums.length  ; i++){
             int left = i+1, right = nums.length-1;
             while(left < right){
-                if(nums[i] + nums[left] + nums[right] == 0) {
+                int now = nums[i] + nums[left] + nums[right];
+                if(now == 0) {
                     ArrayList<Integer> row = new ArrayList<Integer>();
                     row.add(nums[i]);
                     row.add(nums[left]);
                     row.add(nums[right]);
                     result.add(row);
+                    while(left < right){
+                        if (nums[left] == nums[left+1]) {
+                            left++;
+                        }
+                        else
+                            break;
+                    }
+                    while(left < right){
+                        if (nums[right] == nums[right-1]) {
+                            right-- ;
+                        }
+                        else
+                            break;
+                    }
+                    left++;
+                    right--;
                 }
-                while(left < right){
-                    if (nums[left] == nums[left+1])
-                        left += 2;
-                    else
-                        left++;
-                    if (nums[right] == nums[right-1])
-                        right += 2;
-                    else
-                        right--;
+                else if ( now < 0){
+                    while(left < right){
+                        if (nums[left] == nums[left+1]) {
+                            left ++;
+                        }
+                        else
+                            break;
+                    }
+                    left++;
                 }
+                else if ( now >0 ){
+                    while(left < right){
+                        if (nums[right] == nums[right-1]) {
+                            right-- ;
+                        }
+                        else
+                            break;
+                    }
+                    right--;
+                }
+            }
+            while(i < nums.length-1 ){
+                if (nums[i] == nums[i+1]) {
+                    i++ ;
+                }
+                else
+                    break;
             }
         }
         return result;
     }
     public static void main(String [] args){
-        int [] nums ={-1, 0, 1, 2, -1, -4};
+        int [] nums = {-1,0,1,2,-1,-4};
         No15_3Sum a = new No15_3Sum();
         List<List<Integer>> result = No15_3Sum.threeSum(nums);
-        System.out.println();
     }
 }
