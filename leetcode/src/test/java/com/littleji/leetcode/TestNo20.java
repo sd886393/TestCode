@@ -10,6 +10,12 @@ public class TestNo20 {
     @Test
     public void assert1(){
         No20_ValidParentheses a = new No20_ValidParentheses();
-        Assert.assertEquals(a.isValid("()"), true);
+        Assert.assertEquals( true,a.isValid("()"));
+    }
+
+    @Test
+    public void assert2(){
+        No20_ValidParentheses a = new No20_ValidParentheses();
+        Assert.assertEquals(true,a.isValid("([])"));
     }
 }
