@@ -18,4 +18,10 @@ public class TestNo20 {
         No20_ValidParentheses a = new No20_ValidParentheses();
         Assert.assertEquals(true,a.isValid("([])"));
     }
+
+    @Test
+    public void assert3(){
+        No20_ValidParentheses a = new No20_ValidParentheses();
+        Assert.assertEquals(false,a.isValid(")}{({))[{{[}"));
+    }
 }

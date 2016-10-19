@@ -19,9 +19,12 @@ public class No20_ValidParentheses {
                 stack.push(s.charAt(i));
             }
             else if (s.charAt(i)==')' || s.charAt(i)=='}' ||s.charAt(i)==']'){
-                System.out.println(stack.peek());
+                if(stack.empty())
+                    return false;
                 if (stack.peek() == ref[s.charAt(i)])
                     stack.pop();
+                else
+                    return false;
             }
             else
                 return false;
