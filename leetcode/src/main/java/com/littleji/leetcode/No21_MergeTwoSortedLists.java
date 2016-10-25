@@ -1,6 +1,6 @@
 package com.littleji.leetcode;
 
-import java.util.List;
+import com.littleji.leetcode.utils.ListNode;
 
 /**
  * Created by Jimmy on 2016/10/19.
