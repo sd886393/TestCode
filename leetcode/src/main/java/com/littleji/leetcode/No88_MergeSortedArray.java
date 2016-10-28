@@ -37,6 +37,7 @@ public class No88_MergeSortedArray {
         while(idx2 < m){
             nums1[idx1] = nums2[idx2];
             idx2++;
+            idx1++;
         }
     }
 }
