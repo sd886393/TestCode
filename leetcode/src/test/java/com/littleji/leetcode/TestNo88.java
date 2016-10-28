@@ -36,9 +36,9 @@ public class TestNo88 {
     @Test
     public void assert4(){
         No88_MergeSortedArray a = new No88_MergeSortedArray();
-        int []nums1 = new int[]{1,2,3,0,0,0};
-        int []nums2 = new int[]{2,5,6};
+        int []nums1 = new int[]{4,5,6,0,0,0};
+        int []nums2 = new int[]{1,2,3};
         a.merge(nums1,3,nums2,3);
-        Assert.assertArrayEquals(new int[]{1,2,2,3,5,6},nums1 );
+        Assert.assertArrayEquals(new int[]{1,2,3,4,5,6},nums1 );
     }
 }

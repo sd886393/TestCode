@@ -23,9 +23,9 @@ public class No88_MergeSortedArray {
                 nums2[idx2] = temp;
                 for (int i = 0; i+1 < m; i++){
                     if (nums2[i+1] < nums2[i]){
-                        int tmp = nums1[i];
-                        nums1[i] = nums1[i+1];
-                        nums1[i+1] = tmp;
+                        int tmp = nums2[i];
+                        nums2[i] = nums2[i+1];
+                        nums2[i+1] = tmp;
                     }
                 }
                 idx1++;
