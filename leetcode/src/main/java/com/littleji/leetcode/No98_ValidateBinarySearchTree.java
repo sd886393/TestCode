@@ -1,42 +1,23 @@
 package com.littleji.leetcode;
 
 import com.littleji.leetcode.utils.BinaryNode;
+import com.littleji.leetcode.utils.TreeNode;
 
 class No98_ValidateBinarySearchTree{
-    Integer rmin, lmax;
-    public boolean isValidBST(BinaryNode root) {
-        System.out.println(root.data.getClass());
-        if (root.left == null|| root.right == null )
-            return false;
-        Integer data = (Integer)root.getData();
-        boolean result = false;
-        do{
-
-        }while(result );
-
-        return true;
-
+    public boolean isValidBST(TreeNode root) {
+       return doBST(root, Long.MAX_VALUE, Long.MIN_VALUE);
     }
 
-    public boolean doBST(BinaryNode l, BinaryNode r){
-        if (l == null){
-            if (r == null) {
-                lmax = (Integer)l.data;
-                rmin = (Integer)r.data;
-                return true;
-            }
-            else
+    public boolean doBST(TreeNode root, long upperlimit, long lowerlimit){
+        if (root == null)
+            return true;
+        else if ((Integer)root.val >= upperlimit || (Integer)root.val <= lowerlimit){
                 return false;
+            }
+        else{
+            return doBST(root.left, (Integer)root.val, lowerlimit) && doBST(root.right, upperlimit, (Integer)root.val);
         }
-        else if (r == null)
-            return false;
-        
     }
 
-    public static void main (String [] args){
-        No98_ValidateBinarySearchTree a = new No98_ValidateBinarySearchTree();
-        BinaryNode<Integer>b = new BinaryNode<Integer>(1);
-        a.isValidBST(b);
-    }
 }
 

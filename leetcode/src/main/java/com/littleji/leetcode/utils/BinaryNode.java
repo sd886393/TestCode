@@ -7,20 +7,20 @@ import java.lang.reflect.Type;
  * Created by Jimmy on 2016/10/25.
  */
 public class BinaryNode<T> {
-    public  T data;
+    public  T val;
     public  BinaryNode(T data){
         this(data, null, null);
     }
     public BinaryNode(T data, BinaryNode lt, BinaryNode rt ){
         super();
-        this.data = data;
+        this.val = data;
         this.left = left;
         this.right = right;
     }
     public BinaryNode<T> left;
     public BinaryNode<T> right;
     public T getData(){
-        return this.data;
+        return this.val;
     }
     public T getT() throws InstantiationException, IllegalAccessException {
         Type sType = getClass().getGenericSuperclass();
