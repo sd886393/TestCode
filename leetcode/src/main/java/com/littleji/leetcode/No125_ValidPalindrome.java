@@ -10,20 +10,20 @@ public class No125_ValidPalindrome {
         s = s.toLowerCase();
         int head=0;
         int end = s.length() - 1 ;
-        while (head<s.length()  &&  !isCharacter(s.charAt(head))){
+        while (head<s.length()  &&  !isCharacterOrDigit(s.charAt(head))){
             head++;
         }
-        while (end>0 && !isCharacter(s.charAt(end)) ){
+        while (end>0 && !isCharacterOrDigit(s.charAt(end)) ){
             end--;
         }
         while(head < end) {
             if (s.charAt(head) == s.charAt(end) ){
                 head++;
                 end--;
-                while (head<s.length()  && !isCharacter(s.charAt(head))){
+                while (head<s.length()  && !isCharacterOrDigit(s.charAt(head))){
                     head++;
                 }
-                while (end>0 &&!isCharacter(s.charAt(end))){
+                while (end>0 &&!isCharacterOrDigit(s.charAt(end))){
                     end--;
                 }
                 continue;
@@ -34,8 +34,8 @@ public class No125_ValidPalindrome {
         }
         return true;
     }
-    public boolean isCharacter(char a){
-        if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z'))
+    public boolean isCharacterOrDigit(char a){
+        if ((a >= 'a' && a <= 'z') || (a >= 'A' && a <= 'Z')|| Character.isDigit(a))
             return true;
         else
             return false;
