@@ -1,7 +1,7 @@
 ssmtest/.idea/
 ssmtest/target/
-hexo/.deploy_git
-hexo/node_modules
+hexo/.deploy_git/
+hexo/node_modules/
 */.idea/
 */target/
 *.iml
