@@ -7,8 +7,6 @@ tags :
 - Logstash
 - MultilinePlugin
 
----
-
 ## 概述(abstract)
 如果希望得到配置文件请直接查看"配置(configuration)" if you just want to get the configure file of logstash,so just look at "Configuration".
 最近需要通过logstah处理json格式的日志,最好的结果是配置配置Logstash中的config,用用其他轮子插件,自动化的解析.例如这样一段待分析的信息:
@@ -76,11 +74,11 @@ max_age:如果没有再有新行添加到多行中,那么在max_age后,这个多
 
 #### 解释2
 source 就是存储json串的字段,默认是message字段
-最好是将该字段分析后删除,也就是使用remove_field这个选项,否则不仅分析后的数据进入到了es,原json串也进入,导致存储的数据,占用双倍的空间.
+最好是将该字段分析后删除,可以使用mutate这个插件,并开启remove_field这个选项,否则不仅分析后的数据进入到了es,原json串也进入,导致存储的数据,占用双倍的空间.
 并且该选项也是支持正则表达式的.
 ```
 filter {
-  multiline {
+  mutate {
     remove_field => [ "foo_%{somefield}" ]
   }
 }
@@ -108,6 +106,9 @@ filter {
         source => "message"
         target => "body"
     }
+  mutate {
+    remove_field => [ "foo_%{somefield}" ]
+  }
 }
 ```
 
