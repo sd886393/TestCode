@@ -1,10 +1,10 @@
+---
 date : 2016-11-15 13:50:00
 title : git较为完整安装与配置,解决git clone速度慢等问题(Almost perfect git configuration)
 categories : 
 - 2016-11
 tags : 
 - Git
-
 ---
 
 ## 概述(abstract)

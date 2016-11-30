@@ -1,11 +1,11 @@
-date : 2016-11-28 13:50:00
-title : Logstash 多行匹配插件与解析json文件(use the multiline plugin to decode a whole json file)
-categories : 
-- 2016-11
+date : 2016-11-28 09:50:20
+title : 使用LogStash中的multiline插件来进行json文件解析(use the multiline plugin to decode a whole json file)
+categories : 2016-11
 tags : 
-- DistributedComputing
-- Logstash
-- MultilinePlugin
+ - Logstash
+ - DistributedComputation
+ - ELK
+---
 
 ## 概述(abstract)
 如果希望得到配置文件请直接查看"配置(configuration)" if you just want to get the configure file of logstash,so just look at "Configuration".
