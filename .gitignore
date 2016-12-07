@@ -4,4 +4,6 @@ hexo/.deploy_git/
 hexo/node_modules/
 */.idea/
 */target/
+*/out/
 *.iml
+*/META-INF/

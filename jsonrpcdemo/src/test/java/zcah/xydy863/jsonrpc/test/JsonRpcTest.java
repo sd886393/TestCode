@@ -23,7 +23,7 @@ public class JsonRpcTest {
         // 实例化请求地址，注意服务端web.xml中地址的配置
         try {
             client = new JsonRpcHttpClient(new URL(
-                    "http://127.0.0.1:8080/jsonrpc_server/rpc"));
+                    "http://127.0.0.1:8080/rpc"));
             // 请求头中添加的信息
             Map<String, String> headers = new HashMap<String, String>();
             headers.put("UserKey", "hjckey");

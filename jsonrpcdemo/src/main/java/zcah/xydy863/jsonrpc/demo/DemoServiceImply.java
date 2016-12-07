@@ -17,7 +17,7 @@ public class DemoServiceImply implements DemoService {
     }
 
     public String getString(String msg) {
-        return msg;
+        return "{"+msg+"}";
     }
 
     public void doSomething() {
