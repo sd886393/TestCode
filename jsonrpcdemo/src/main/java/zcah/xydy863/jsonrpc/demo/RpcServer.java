@@ -12,11 +12,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.googlecode.jsonrpc4j.JsonRpcServer;
 import com.googlecode.jsonrpc4j.ProxyUtil;
-import zcah.xydy863.jsonrpc.demo.DemoService;
-import zcah.xydy863.jsonrpc.demo.DemoServiceImply;
 
 public class RpcServer extends HttpServlet {
     private static final long serialVersionUID = 12341234345L;

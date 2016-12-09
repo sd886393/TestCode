@@ -1,25 +1,22 @@
-package zcah.xydy863.jsonrpc.test;
+package zcah.xydy863.jsonrpc;
 
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import zcah.xydy863.jsonrpc.demo.*;
-
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.googlecode.jsonrpc4j.JsonRpcHttpClient;
+import com.googlecode.jsonrpc4j.ProxyUtil;
+import org.junit.Test;
+import zcah.xydy863.jsonrpc.demo.DemoBean;
+import zcah.xydy863.jsonrpc.demo.DemoService;
+
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JsonRpcTest {
     static JsonRpcHttpClient client;
 
-    public JsonRpcTest() {
 
-    }
-
-    public static void main(String[] args) throws Throwable {
+    @Test
+    public void test1 () throws Throwable {
         // 实例化请求地址，注意服务端web.xml中地址的配置
         try {
             client = new JsonRpcHttpClient(new URL(
@@ -48,6 +45,29 @@ public class JsonRpcTest {
         }
     }
 
+        @Test
+        public void test2() throws Throwable {
+            try {
+                JsonRpcHttpClient client = new JsonRpcHttpClient(
+                        new URL("http://127.0.0.1:8080/rpc"));
+
+                // 添加到请求头中去
+
+                DemoService userService = ProxyUtil.createClientProxy(
+                        client.getClass().getClassLoader(),
+                        DemoService.class,
+                        client);
+
+                System.out.println(userService.getString("aa"));
+                System.out.println( client.invoke("getString", new String[] { "{"+"haha"+":1"+"}" }, String.class));
+                System.out.println( client.invoke("getInt", new Integer[] { 2 }, Integer.class));
+
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
     public void doSomething() throws Throwable {
         client.invoke("doSomething", null);
     }
@@ -68,5 +88,6 @@ public class JsonRpcTest {
         String[] msgs = new String[] { msg };
         return client.invoke("getString", msgs, String.class);
     }
+
 
 }
