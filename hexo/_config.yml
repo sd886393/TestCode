@@ -9,7 +9,7 @@ description: littleji's blog
 author: littleji
 language: zh-CN
 timezone: Asia/Shanghai
-duoshuo_shortname: littleji
+disqus_shortname: littleji
 ## Your duoshuo_shortname, e.g. username
 
 # URL
