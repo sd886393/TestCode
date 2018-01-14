@@ -18,7 +18,8 @@ tags:
  邻接矩阵,其只要是用来存储一个图结构.
 
  首先一个无向图如下所示
- <div align=center>
+
+<div align=center>
 <img class="little" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/6n-graph2.svg/185px-6n-graph2.svg.png" />
 </div>
 <div align=center>
