@@ -17,19 +17,19 @@ hexo.extend.filter.register('before_post_render', function(data){
 	// Try to read tail.md
 	try {
 		var file_content = fs.readFileSync('tail.md');
-		if(file_content && data.content.length > 50) 
+		if(file_content && data.content.length > 500) 
 		{
 			data.content += file_content;
 		}
 	} catch (err) {
 		if (err.code !== 'ENOENT') throw err;
-		
 		// No process for ENOENT error
 	}
-
   	// 添加具体文章链接, 不需要去掉即可
-	var permalink = '\n本文链接：' + data.permalink;
+	var permalink = '\n本文链接为：' + data.permalink;
 	data.content += permalink;
+
+	// 添加文章的
   
 	return data;
 });
