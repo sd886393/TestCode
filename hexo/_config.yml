@@ -31,7 +31,7 @@ skip_render:
 
 #Social links
 social:
-  github: https://github.com/sd886393
+  github: https://github.com/littleji
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -76,5 +76,5 @@ theme: light
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/sd886393/sd886393.github.io.git
+  repo: https://github.com/littleji/littleji.github.io.git
   branch: master

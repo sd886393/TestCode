@@ -114,7 +114,7 @@ via: https://opensource.com/article/18/8/getting-started-i3-window-manager
 
 作者：[Ricardo Gerardi][a]
 选题：[lujun9972](https://github.com/lujun9972)
-译者：[sd886393](https://github.com/sd886393)
+译者：[littleji](https://github.com/littleji)
 校对：[校对者ID](https://github.com/校对者ID)
 
 本文由 [LCTT](https://github.com/LCTT/TranslateProject) 原创编译，[Linux中国](https://linux.cn/) 荣誉推出
