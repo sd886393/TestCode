@@ -21,5 +21,4 @@ func main() {
 	var y int32 = 20
 	z := x + int(y)
 	fmt.Println(x, y, z)
-
 }
