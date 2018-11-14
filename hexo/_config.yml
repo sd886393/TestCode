@@ -76,5 +76,5 @@ theme: light
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/littleji/littleji.github.io.git
+  repo: git@github.com:littleji/littleji.github.io.git
   branch: master
