@@ -2,7 +2,7 @@ package com.littleji.algo4th.ch2;
 import com.littleji.algo4th.util;
 class SelectionSort implements Sort {
 
-    public   boolean less (Comparable a, Comparable b){
+    public  boolean less (Comparable a, Comparable b){
         return a.compareTo(b) < 0;
     }
     public  void exch(Comparable [] a, int i, int j){

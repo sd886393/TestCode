@@ -1,4 +1,4 @@
-title: Algorithm4thNotesOfGraph
+title: Algorithm4thNotesOfUndirectedGraph
 date: 2015-11-14
 categories: 
 - 2015-11
@@ -36,6 +36,78 @@ tags:
 3. G 是连通的,但删除任意一条边就不连通
 4. G 是无环图,但添加任意一条边都会产生环
 5. G 中任意一对顶点之间仅存在一条简单的路径
+
+# 无向图 API
+
+1. 创建一个含有 V 个顶点的但不含边的图: Graph(int V)
+2. 获得顶点的个数:int V()
+3. 获得图的边数:int E()
+4. 添加一条边:void addEdge(int v, int w)
+5. 顶点 v 相邻的所有边,Iterable<Integer> adj(int v)
+6. 对象展示 String toString() 
+
+# 常用的图代码
+
+1. 计算 v 的度数
+```
+public static int degree(Graph G, int v){
+	int degree = 0;
+	for(int w:G.adj(v)) degree ++;
+	return degree;
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
