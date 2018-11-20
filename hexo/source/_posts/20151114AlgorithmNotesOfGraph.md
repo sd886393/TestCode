@@ -46,7 +46,7 @@ tags:
 5. 顶点 v 相邻的所有边,Iterable<Integer> adj(int v)
 6. 对象展示 String toString() 
 
-# 常用的图代码
+## 常用的图代码
 
 1. 计算 v 的度数
 ```
@@ -56,6 +56,65 @@ public static int degree(Graph G, int v){
 	return degree;
 }
 ```
+
+2. 计算所有顶点的最大度数
+
+```
+public static int maxDegree(Graph G){
+	int max =0;
+	for(int v : G.V()){
+		d = degree(G, v)
+		if( d > max) max = d;
+	}
+	return max;
+}
+```
+
+3. 计算所有顶点的平均度数
+```
+public static int avgDegree(Graph G){
+	return 2 * G.E()/G.V-1;
+}
+```
+
+4. 计算自环的个数
+```
+public static int numberOfSelfLoops(Graph G){
+	int count = 0;
+	for(int v=0; v < G.V(); v++){
+		for(int w:G.adj(v)){
+			if(w == v) count++;
+		}
+	}
+}
+```
+
+## 图的几种表示方法
+
+1. 邻接矩阵法: 我们通过使用一个V 乘 V 的布尔矩阵,当顶点 v 和 w 有连接的时候,则 v 行 w 列的值为true,但是这种表示法无法在含有大量结点的时候保证能够有足够的空间进行存储,且无法表示平行边
+2. 边的数组:通过定义一个 Edge 类,它含有两个 int 实例变量. 这种表示法很简单,但无法满足 adj() 的求取
+3. 邻接表数组:通过使用一个以顶点为索引的列表数组,其中的每个元素都是与该顶点相连接的顶点列表.
+
+## 邻接表数据结构
+
+1. 主要用于非稠密图的标准表示
+2. 通过使用链表的数据类型
+3. 它将每个顶点的所有相邻顶点都保存在该顶点对应的元素所指向的一张链表中
+4. 当添加一条 v 与 w 边的时候,要添加将 w 添加到 v 的邻接表中,并且把 v 添加到 w 的邻接表中,因此所有的边会出现两次
+
+## 邻接表的特点
+
+1. 使用的空间与 V + E 成正比
+2. 添加一条边所需要的时间为常数
+3. 遍历顶点 v 的所有相邻顶点所需的时间和 v 的度数成正比
+4. 支持自环和平行边的检测
+
+## 
+
+
+
+
+
 
 
 
