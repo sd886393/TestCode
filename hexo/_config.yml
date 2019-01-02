@@ -18,6 +18,8 @@ url: http://littleji.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+mathjax:
+    enable: true
 
 # Directory
 source_dir: source
