@@ -2,6 +2,16 @@
   <% if (item.photos && item.photos.length){ %>
     <%- partial('post/gallery') %>
   <% } %>
+    <% if (  ( theme.toc !== false) ){ %>
+    <div id="toc" class="toc-article">
+      <strong class="toc-title">目录</strong>
+      <a class="js-toggle-toc" href="javascript:void(0)"></a>
+      <div class="toc-content">
+        <%- toc(item.content) %>
+      </div>
+    </div>
+  <% } %>
+  
   <div class="post-content">
     <header>
       <% if (item.layout != 'page'){ %>

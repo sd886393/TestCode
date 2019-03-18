@@ -31,6 +31,8 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+# toc 
+toc: false
 #Social links
 social:
   github: https://github.com/littleji
