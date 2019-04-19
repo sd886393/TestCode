@@ -1,0 +1,60 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_11",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_11",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_09",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_09",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_05",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_05",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_03",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_03",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_17",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_17",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BinarySearch",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.BinarySearch",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_18",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_18",
+            "projectName": "algo4th"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ex_1_1_01",
+            "request": "launch",
+            "mainClass": "com.littleji.algo4th.ch1.Ex_1_1_01",
+            "projectName": "algo4th"
+        }
+    ]
+}

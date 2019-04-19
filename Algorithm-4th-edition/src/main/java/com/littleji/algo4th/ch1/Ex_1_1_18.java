@@ -1,5 +1,7 @@
 package com.littleji.algo4th.ch1;
 
+import edu.princeton.cs.introcs.StdOut;
+
 public class Ex_1_1_18 {
 
     public static int mystery(int a , int b){
@@ -11,5 +13,6 @@ public class Ex_1_1_18 {
     public static  void main(String[] args){
         System.out.println( mystery(3,11));
         System.out.println( mystery(2,25));
+        StdOut.print(mystery(3,11));
     }
 }

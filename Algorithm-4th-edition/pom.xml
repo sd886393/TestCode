@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <jdk.version>1.11</jdk.version>
+    <jdk.version>1.8</jdk.version>
   </properties>
 
   <dependencies>
@@ -32,6 +32,20 @@
 
   </dependencies>
   <build>
+    <sourceDirectory>
+      src/main/java
+    </sourceDirectory>
+    <testSourceDirectory>
+      src/test/java
+    </testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>
+          src/main/resources
+        </directory>
+      </resource>
+    </resources>
+    
   <plugins>
     <!--compiler插件-->
     <plugin>
@@ -41,9 +55,46 @@
       <configuration>
         <source>${jdk.version}</source>
         <target>${jdk.version}</target>
-        <encoding>${file.encoding}</encoding>
       </configuration>
     </plugin>
+<!--
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>1.6.0</version>
+      <executions>
+        <execution>
+          <phase>
+            test
+          </phase>
+          <goals>
+            <goal>
+              java
+            </goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <mainClass>
+          com.littleji.algo4th.ch1.BinarySearch
+        </mainClass>
+        <excutable>
+          mvn
+        </excutable>
+        <arguments>
+          <argument>
+            white.txt
+          </argument>
+          <argument>
+            &lt;
+          </argument>
+          <argument>
+            test.txt
+          </argument>
+        </arguments>
+      </configuration>
+    </plugin>
+    -->
   </plugins>
   </build>
 </project>
