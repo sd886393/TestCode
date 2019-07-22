@@ -82,3 +82,11 @@ deploy:
   type: git
   repo: git@github.com:littleji/littleji.github.io.git
   branch: master
+  
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: false
+  styles:
+  localEmojis:
