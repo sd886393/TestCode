@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <spring.version>4.2.9.RELEASE</spring.version>
+        <spring.version>4.3.28.RELEASE</spring.version>
         <velocity.version>1.7</velocity.version>
         <velocity-tools.version>2.0</velocity-tools.version>
         <mybatis.version>3.2.8</mybatis.version>
