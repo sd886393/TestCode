@@ -18,7 +18,7 @@ date : 2019/04/01 23:15:56
 8|CISSP-CBK-7th|CISSP experts|10%|20200508
 9|重构:改善既有的代码的设计|Martin Fowler|0%|20190816
 10|大规模分布式存储系统:原理分析与架构实战|杨传辉|15%|20190904
-11|Head First 设计模式-2ed|Eric Freeman & Elisabeth Freeman with Kathy Sierra & Bert Bates|60%|20200706
+11|Head First 设计模式-2ed|Eric Freeman & Elisabeth Freeman with Kathy Sierra & Bert Bates|100%|20201010
 12|How Google Tests Software|James A. Whittaker & Jason Arbon & Jeff Carollo|100%|20200305
 13|The Mythical Man-Month: Essays on Software Engineering|FrederickP.Brooks.Jr.|100%|20191101
 14|Implementing Domain-Driven Design|Vaughn Vernon|11%|20191120
@@ -34,7 +34,7 @@ date : 2019/04/01 23:15:56
 24|Kubernetes in Action| Marko Luksa |26%|20200508
 25|数据库索引设计与优化| [美] Tapio Lahdenmaki & [美] Michael Leach |25%|20200616
 26|大数据之路：阿里巴巴大数据实践| 阿里巴巴 |30%|20200723
-27|领域驱动设计 软件核心复杂性应对之道 修订版| [美] Eric Evans |30%|20200914
+27|领域驱动设计 软件核心复杂性应对之道 修订版| [美] Eric Evans |100%|20201010
 28|互联网企业安全高级指南| 赵彦 & 江虎 & 胡乾威 |100%|20200810
 29|CISA Study Guide|ISACA|25%|20200903
 30|CISA Review Manual|ISACA|30%|20200914
@@ -47,7 +47,7 @@ date : 2019/04/01 23:15:56
 ---|---|---|---|---
 1|原则-1ed|Ray Dalio|100%|20200130
 2|态度-1ed|吴军|100%|20190325
-3|思考,快与慢-1ed|Daniel Kahneman|15%|20190401
+3|思考,快与慢-1ed|Daniel Kahneman|50%|20201010
 4|枢纽:3000年的中国|施展|15%|20200914
 5|卓有成效的管理者|Peter Drucker|100%|20190816
 6|晚年盲言|钱穆|5%|20190601
